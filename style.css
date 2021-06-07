@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:rgba(0,0,0,.7);
+}
+
+.container{
+    padding:0 1rem;
+}
+
+.nav{
+    background-color: #fff;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+ul li{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    color:#eee;
+    margin-bottom: 2rem;
+}
+
+.about{
+   
+    
+}
+
+.about__title{
+    margin-bottom:.75rem;
+    text-align:center;
+}
+
+.about__data{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding:0 1rem;
+}
+
+.about__image{
+    width: 100%;
+    height: auto;
+}
+
+img{
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+}
+
+.text{
+    font-size: 1rem;
+    font-weight:400;
+}
+
+.about__text{
+    margin-bottom: .75rem;
+}
+
+.skills__title{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.skills__data{
+    width: 100%;
+}
+
+.contact__info{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.contact__item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media screen and (max-width:767px){
+    .nav__list{
+        display:none;
+    }
+
+}
+
+@media screen and (max-width:480px){
+    .about__image{
+        display:none;
+    }
+    .about__data{
+        display: block;
+    }
+
+    .about__info{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info__item{
+        align-items: right;
+    }
+}
